@@ -13,8 +13,8 @@ $(document).ready(() => {
         $('#input-tarefa').val(' ')
     })
 
-    $("ul").click(function () {
-        $('li').addClass('feito')
+    $("ul").on('click', 'li', function () {
+        $(this).toggleClass('feito')
     })
 
 })
